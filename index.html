@@ -102,19 +102,9 @@
     <header class="sticky top-0 z-50 glass-panel border-b border-brand-200/50 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <!-- Pure SVG Vector Logo replicating the Instagram brand motif -->
-                <div class="w-12 h-12 rounded-full bg-stone-900 border-2 border-brand-300 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center p-1.5">
-                    <svg viewBox="0 0 100 100" class="w-full h-full text-brand-400" fill="currentColor">
-                        <!-- Heart Loop -->
-                        <path d="M30 25 C15 25, 10 45, 30 60 C45 70, 50 75, 50 75 C50 75, 55 70, 70 60 C90 45, 85 25, 70 25 C58 25, 50 38, 50 38 C50 38, 42 25, 30 25 Z" fill="none" stroke="#e29eb0" stroke-width="8" stroke-linecap="round"/>
-                        <!-- Yarn Ball -->
-                        <circle cx="75" cy="55" r="15" fill="#b84a66"/>
-                        <path d="M65 48 Q75 60 85 52" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M68 62 Q75 50 82 60" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-                        <!-- Crochet Hook -->
-                        <line x1="20" y1="80" x2="60" y2="35" stroke="#e29eb0" stroke-width="5" stroke-linecap="round"/>
-                        <circle cx="20" cy="80" r="3" fill="#fff"/>
-                    </svg>
+                <!-- Using exact logo image -->
+                <div class="w-12 h-12 rounded-full overflow-hidden bg-black border-2 border-brand-300 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center">
+                    <img src="logo.png" alt="The Crochet Boutique Logo" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-stone-900 block leading-none">The Crochet Boutique</span>
@@ -270,4 +260,323 @@
                 </div>
 
                 <!-- Product 4 -->
-              
+                <div class="product-card card-3d group bg-cream rounded-3xl overflow-hidden border border-brand-200/65 shadow-lg flex flex-col reveal-on-scroll" data-category="accessories" style="transition-delay: 0.1s;">
+                    <div class="relative aspect-square overflow-hidden bg-stone-100">
+                        <img src="666.jpg" alt="Keychains" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-brand-700 text-xs font-bold px-3 py-1 rounded-full shadow">Keychains</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-brand-600 transition-colors">Miniature Crochet Dress Keychains & Pouches</h3>
+                            <p class="text-stone-500 text-sm mt-1">Delightful miniature dress keychains in vibrant colors, smartphone sleeves, and bespoke pouches.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-brand-100">
+                            <span class="price-tag font-serif text-2xl font-bold text-brand-700" data-aed="45" data-inr="950">AED 45</span>
+                            <button onclick="addToCart('Miniature Dress Keychain', 45, 950, '666.jpg')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow transition-all hover:scale-105 flex items-center gap-2">
+                                <i class="fa-solid fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card card-3d group bg-cream rounded-3xl overflow-hidden border border-brand-200/65 shadow-lg flex flex-col reveal-on-scroll" data-category="decor" style="transition-delay: 0.2s;">
+                    <div class="relative aspect-square overflow-hidden bg-stone-100">
+                        <img src="666.jpg" alt="Doilies & Table Linens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-brand-700 text-xs font-bold px-3 py-1 rounded-full shadow">Home Decor</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-brand-600 transition-colors">Vintage Lace Doilies & Table Linens</h3>
+                            <p class="text-stone-500 text-sm mt-1">Intricate mandala patterns and delicate lace table centerpieces crafted using grandma's traditional techniques.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-brand-100">
+                            <span class="price-tag font-serif text-2xl font-bold text-brand-700" data-aed="90" data-inr="1950">AED 90</span>
+                            <button onclick="addToCart('Vintage Lace Doily', 90, 1950, '666.jpg')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow transition-all hover:scale-105 flex items-center gap-2">
+                                <i class="fa-solid fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card card-3d group bg-cream rounded-3xl overflow-hidden border border-brand-200/65 shadow-lg flex flex-col reveal-on-scroll" data-category="winter" style="transition-delay: 0.3s;">
+                    <div class="relative aspect-square overflow-hidden bg-stone-100">
+                        <img src="555.jpg" alt="Ponchos & Shawls" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-brand-700 text-xs font-bold px-3 py-1 rounded-full shadow">Ponchos & Shawls</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-brand-600 transition-colors">Chevron Poncho & Winter Shawl Collection</h3>
+                            <p class="text-stone-500 text-sm mt-1">Luxurious multi-color chevron pattern ponchos and elegant evening shawls designed for cozy warmth.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-brand-100">
+                            <span class="price-tag font-serif text-2xl font-bold text-brand-700" data-aed="200" data-inr="4300">AED 200</span>
+                            <button onclick="addToCart('Chevron Poncho & Shawl', 200, 4300, '555.jpg')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow transition-all hover:scale-105 flex items-center gap-2">
+                                <i class="fa-solid fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Order Builder Section -->
+    <section id="customizer" class="py-20 bg-gradient-to-t from-brand-50/60 to-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+            <div class="card-3d bg-white rounded-3xl shadow-xl border border-brand-200/80 p-8 sm:p-12 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-10 space-y-3">
+                    <span class="text-brand-600 font-semibold tracking-widest text-xs uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-200">Customise It Ur Way!</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Build Your Dream Order</h2>
+                    <p class="text-stone-600 text-sm">Have a unique design in mind or want a custom name added? Fill in your details below and we’ll coordinate via WhatsApp!</p>
+                </div>
+
+                <form onsubmit="handleCustomOrder(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
+                            <input type="text" id="cust-name" required class="w-full px-4 py-3 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-cream text-sm transition-all" placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Delivery Country</label>
+                            <select id="cust-country" class="w-full px-4 py-3 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-cream text-sm font-medium">
+                                <option value="UAE">🇦🇪 United Arab Emirates</option>
+                                <option value="India">🇮🇳 India</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Item Category</label>
+                            <select id="cust-item-type" class="w-full px-4 py-3 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-cream text-sm font-medium">
+                                <option value="Baby Romper">Baby Romper & Overalls</option>
+                                <option value="Name Blanket">Custom Name Blanket</option>
+                                <option value="Winter Wear">Winter Beanie / Cardigan / Gloves</option>
+                                <option value="Keychain">Handmade Keychain / Pouch</option>
+                                <option value="Home Decor">Doily / Table Linen / Shawl</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Preferred Colors & Details</label>
+                            <input type="text" id="cust-details" required class="w-full px-4 py-3 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-cream text-sm" placeholder="e.g., Pastel pink & white, Name 'Ayesha'">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Special Instructions / Notes</label>
+                        <textarea id="cust-notes" rows="3" class="w-full px-4 py-3 rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-cream text-sm" placeholder="Tell us about sizing, delivery deadlines, or specific stitch preferences..."></textarea>
+                    </div>
+
+                    <div class="text-center pt-4">
+                        <button type="submit" class="w-full sm:w-auto px-10 py-4 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold shadow-xl shadow-brand-600/30 transition-all hover:scale-105 flex items-center justify-center gap-3 mx-auto">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Submit Custom Request via WhatsApp</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row items-center justify-between pb-8 border-b border-stone-800 gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover border border-stone-700">
+                    <span class="font-serif text-xl font-bold text-white">The Crochet Boutique</span>
+                </div>
+                <p class="text-stone-400 text-sm">A homemade happiness created by sisters with inherited skills from grandma[cite: 1]. Supplying UAE & India 🇦🇪🇮🇳</p>
+            </div>
+            <div class="pt-8 text-xs text-stone-500">
+                <p>&copy; 2026 The Crochet Boutique (@croche_boutiq)[cite: 1]. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Slide-over Drawer -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col transform transition-transform duration-300">
+                <div class="p-6 bg-brand-50 border-b border-brand-200 flex items-center justify-between">
+                    <h3 class="font-serif text-xl font-bold text-stone-900 flex items-center gap-2">
+                        <i class="fa-solid fa-bag-shopping text-brand-600"></i> Your Shopping Bag
+                    </h3>
+                    <button onclick="toggleCart()" class="w-8 h-8 rounded-full bg-white hover:bg-brand-100 flex items-center justify-center text-stone-700 shadow-sm transition-all">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div id="cart-items" class="p-6 flex-grow overflow-y-auto space-y-4">
+                    <p class="text-stone-500 text-center py-12 text-sm">Your bag is currently empty.</p>
+                </div>
+                <div class="p-6 bg-stone-50 border-t border-brand-100 space-y-4">
+                    <div class="flex items-center justify-between font-serif text-lg font-bold text-stone-900">
+                        <span>Total:</span>
+                        <span id="cart-total">AED 0</span>
+                    </div>
+                    <button onclick="checkoutWhatsApp()" class="w-full py-4 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold shadow-lg shadow-brand-600/30 transition-all hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Proceed to WhatsApp Checkout</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity & Scroll Animations -->
+    <script>
+        let currentCurrency = 'AED';
+        let cart = [];
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        function setCurrency(curr) {
+            currentCurrency = curr;
+            const btnAed = document.getElementById('btn-aed');
+            const btnInr = document.getElementById('btn-inr');
+            
+            if (curr === 'AED') {
+                btnAed.className = "px-3 py-1.5 rounded-full bg-brand-600 text-white shadow-sm transition-all";
+                btnInr.className = "px-3 py-1.5 rounded-full text-stone-700 hover:text-brand-600 transition-all";
+            } else {
+                btnInr.className = "px-3 py-1.5 rounded-full bg-brand-600 text-white shadow-sm transition-all";
+                btnAed.className = "px-3 py-1.5 rounded-full text-stone-700 hover:text-brand-600 transition-all";
+            }
+
+            document.querySelectorAll('.price-tag').forEach(el => {
+                const aedVal = el.getAttribute('data-aed');
+                const inrVal = el.getAttribute('data-inr');
+                el.innerText = curr === 'AED' ? `AED ${aedVal}` : `₹ ${inrVal}`;
+            });
+
+            updateCartDisplay();
+        }
+
+        function filterProducts(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = "filter-btn px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-50 text-stone-700 hover:bg-brand-100 border border-brand-200 transition-all hover:scale-105";
+            });
+            event.target.className = "filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-600 text-white shadow-sm transition-all hover:scale-105";
+
+            document.querySelectorAll('.product-card').forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleCart() {
+            document.getElementById('cart-drawer').classList.toggle('hidden');
+        }
+
+        function addToCart(name, aedPrice, inrPrice, image) {
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.qty += 1;
+            } else {
+                cart.push({ name, aedPrice, inrPrice, image, qty: 1 });
+            }
+            updateCartBadge();
+            updateCartDisplay();
+            toggleCart();
+        }
+
+        function updateCartBadge() {
+            document.getElementById('cart-badge').innerText = cart.reduce((sum, item) => sum + item.qty, 0);
+        }
+
+        function updateCartDisplay() {
+            const container = document.getElementById('cart-items');
+            if (cart.length === 0) {
+                container.innerHTML = `<p class="text-stone-500 text-center py-12 text-sm">Your bag is currently empty.</p>`;
+                document.getElementById('cart-total').innerText = currentCurrency === 'AED' ? 'AED 0' : '₹ 0';
+                return;
+            }
+
+            let html = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const itemPrice = currentCurrency === 'AED' ? item.aedPrice : item.inrPrice;
+                total += itemPrice * item.qty;
+                html += `
+                    <div class="flex items-center gap-4 bg-cream p-3 rounded-2xl border border-brand-100">
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-xl">
+                        <div class="flex-grow">
+                            <h4 class="font-serif font-bold text-stone-900 text-sm">${item.name}</h4>
+                            <p class="text-xs text-brand-600 font-semibold mt-0.5">${currentCurrency === 'AED' ? 'AED ' + item.aedPrice : '₹ ' + item.inrPrice} x ${item.qty}</p>
+                        </div>
+                        <button onclick="removeFromCart(${index})" class="text-stone-400 hover:text-red-600 p-2"><i class="fa-solid fa-trash-can text-sm"></i></button>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+            document.getElementById('cart-total').innerText = currentCurrency === 'AED' ? `AED ${total}` : `₹ ${total}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartBadge();
+            updateCartDisplay();
+        }
+
+        function checkoutWhatsApp() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            let message = "Hello! I would like to order the following items from The Crochet Boutique (@croche_boutiq):\n\n";
+            let total = 0;
+            cart.forEach(item => {
+                const p = currentCurrency === 'AED' ? item.aedPrice : item.inrPrice;
+                message += `- ${item.name} (Qty: ${item.qty}) - ${currentCurrency} ${p * item.qty}\n`;
+                total += p * item.qty;
+            });
+            message += `\nTotal: ${currentCurrency} ${total}\nPlease confirm my order!`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function handleCustomOrder(e) {
+            e.preventDefault();
+            const name = document.getElementById('cust-name').value;
+            const country = document.getElementById('cust-country').value;
+            const itemType = document.getElementById('cust-item-type').value;
+            const details = document.getElementById('cust-details').value;
+            const notes = document.getElementById('cust-notes').value;
+
+            const message = `Hello! Custom Order Request from The Crochet Boutique website:\n\n` +
+                            `👤 Name: ${name}\n` +
+                            `📍 Delivery Region: ${country}\n` +
+                            `🧶 Item Type: ${itemType}\n` +
+                            `🎨 Details/Colors: ${details}\n` +
+                            `📝 Notes: ${notes}`;
+
+            window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
